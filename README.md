@@ -35,14 +35,11 @@ Inspirado nos protocolos de suporte à vida e plantio em Marte, o aplicativo tra
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado.
-- Dispositivo físico com o App **Expo Go** instalado ou emulador configurado.
+- Dispositivo físico com o App **Expo Go** instalado ou emulador configurado.(pode ser testado no computador tambem, pelo browser)
 
 ### Passos de Instalação e Execução
 
 1. Clone este repositório para sua máquina:
-   ```bash
-   git clone git@github.com:eericsm/3ESPV-mobile_GS.git
-   ```
 
 2. Entre na pasta do projeto:
    ```bash
@@ -64,4 +61,9 @@ Inspirado nos protocolos de suporte à vida e plantio em Marte, o aplicativo tra
 - **Web:** Com o terminal aberto, aperte a tecla `w` para testar o sistema renderizado pelo seu navegador de internet padrão.
 
 ---
-📱 *Projeto desenvolvido para a entrega da Global Solution.*
+## Integrantes
+- Joao Victor Oliveira dos Santos - RM557948
+- Matheus Alcântara Estevão - RM558193
+- Nicolle Pellegrino Jelinski - RM558610
+- Pedro Pereira dos Santos - RM552047
+- Eric Segawa Montagner- RM558224
