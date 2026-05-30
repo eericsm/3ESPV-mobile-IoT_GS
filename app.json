@@ -33,7 +33,16 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O aplicativo precisa acessar suas fotos para anexar imagens às estufas.",
+          "cameraPermission": "O aplicativo precisa da câmera para tirar fotos das estufas."
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "reactCompiler": true

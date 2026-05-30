@@ -2,6 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { RootStackParamList, TabParamList } from './src/types';
 
@@ -47,12 +48,14 @@ function TabNavigator() {
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="HomeTabs" component={TabNavigator} />
-                <Stack.Screen name="Success" component={SuccessScreen} />
-                <Stack.Screen name="Detalhes" component={DetalhesScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <SafeAreaProvider>
+            <NavigationContainer>
+                <Stack.Navigator screenOptions={{ headerShown: false }}>
+                    <Stack.Screen name="HomeTabs" component={TabNavigator} />
+                    <Stack.Screen name="Success" component={SuccessScreen} />
+                    <Stack.Screen name="Detalhes" component={DetalhesScreen} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </SafeAreaProvider>
     );
 }
