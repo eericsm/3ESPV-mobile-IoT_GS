@@ -1,56 +1,67 @@
-# Welcome to your Expo app 👋
+# 🌱 AstroFarm
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> **Global Solution FIAP - 3ESPV** <br>
+> *Tecnologia de missões espaciais e cultivo em ambientes hostis aplicada de forma sustentável à agricultura terrestre.*
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Sobre o Projeto
 
+O **AstroFarm** é um aplicativo mobile desenvolvido com **React Native (Expo)** focado no monitoramento e gerenciamento inteligente de estufas de alta performance. 
+
+Inspirado nos protocolos de suporte à vida e plantio em Marte, o aplicativo traz para a mão do agricultor a capacidade de gerenciar as condições vitais das plantas (temperatura, umidade, nível de água e luminosidade) através de uma interface intuitiva, com sensores em tempo real e um sistema de avisos e gestão preventiva.
+
+## 📱 Funcionalidades
+
+- **Dashboard (Missão Ativa):** Métricas consolidadas com a contagem de estufas, cultivos e panorama de alertas prioritários.
+- **Cadastro Dinâmico:** Inserção de novos cultivos utilizando **integração nativa com a Câmera** para registro real do plantio.
+- **Micro-Monitoramento:** Painel detalhado de cada estufa com:
+  - Condições atuais dos sensores.
+  - Etiqueta de status inteligente (Crítico, Atenção, Saudável).
+  - Capacidade de exclusão e atualização (refresh) de aferições.
+- **Alertas e Recomendações (IA):** O aplicativo cruza os dados dos sensores e entrega avisos autônomos e recomendações (ex: resfriamento urgente por estresse térmico, recarga do reservatório).
+- **Relatórios:** Visão tabular histórica em formato de gráficos e barras.
+- **Persistência de Dados (Offline):** Gravação integral das estufas direto na memória do celular utilizando `AsyncStorage`, para uso livre de redes.
+
+## 🛠 Tecnologias Utilizadas
+
+- **React Native** & **TypeScript**
+- **Expo Framework (SDK 54)**
+- **React Navigation v7** (Bottom Tabs & Native Stack)
+- **AsyncStorage** para persistência de dados mobile
+- **Expo Image Picker** (Acesso nativo à Câmera/Galeria)
+
+## ⚙️ Como executar localmente
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado.
+- Dispositivo físico com o App **Expo Go** instalado ou emulador configurado.
+
+### Passos de Instalação e Execução
+
+1. Clone este repositório para sua máquina:
+   ```bash
+   git clone git@github.com:eericsm/3ESPV-mobile_GS.git
+   ```
+
+2. Entre na pasta do projeto:
+   ```bash
+   cd astrofarm
+   ```
+
+3. Instale as dependências:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+4. Inicie o servidor do Expo:
    ```bash
-   npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+### Visualizando o App
+- **Mobile:** Usando o app do **Expo Go** em seu celular, escaneie o QR Code que surgirá no terminal do seu computador (verifique se os dispositivos estão na mesma rede de Wi-Fi).
+- **Web:** Com o terminal aberto, aperte a tecla `w` para testar o sistema renderizado pelo seu navegador de internet padrão.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+📱 *Projeto desenvolvido para a entrega da Global Solution.*
