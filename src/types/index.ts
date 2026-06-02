@@ -31,6 +31,7 @@ export type TabParamList = {
     Estufas: undefined;
     Cadastro: undefined;
     Relatorios: undefined;
+    IoT: undefined;
 };
 
 // Tipagem utilitária para usar nas props das telas

@@ -13,6 +13,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import EstufasListScreen from './src/screens/EstufasListScreen';
 import DetalhesScreen from './src/screens/DetalhesScreen';
 import RelatoriosScreen from './src/screens/RelatoriosScreen';
+import IoTDashboardScreen from './src/screens/IoTDashboardScreen';
 
 // Criação dos navegadores tipados
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -34,6 +35,7 @@ function TabNavigator() {
                     if (route.name === 'Estufas') iconName = 'leaf';
                     else if (route.name === 'Cadastro') iconName = 'add-circle';
                     else if (route.name === 'Relatorios') iconName = 'bar-chart';
+                    else if (route.name === 'IoT') iconName = 'hardware-chip';
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
             })}
@@ -42,6 +44,7 @@ function TabNavigator() {
             <Tab.Screen name="Estufas" component={EstufasListScreen} />
             <Tab.Screen name="Cadastro" component={CadastroScreen} />
             <Tab.Screen name="Relatorios" component={RelatoriosScreen} />
+            <Tab.Screen name="IoT" component={IoTDashboardScreen} options={{ tabBarLabel: 'Sensores' }} />
         </Tab.Navigator>
     );
 }
