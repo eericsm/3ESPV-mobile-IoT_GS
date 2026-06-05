@@ -60,6 +60,9 @@ Inspirado nos protocolos de suporte à vida e plantio em Marte, o aplicativo tra
 - **Mobile:** Usando o app do **Expo Go** em seu celular, escaneie o QR Code que surgirá no terminal do seu computador (verifique se os dispositivos estão na mesma rede de Wi-Fi).
 - **Web:** Com o terminal aberto, aperte a tecla `w` para testar o sistema renderizado pelo seu navegador de internet padrão.
 
+### video
+https://youtu.be/WKVuz0naQPA
+
 ---
 ## Integrantes
 - Joao Victor Oliveira dos Santos - RM557948
