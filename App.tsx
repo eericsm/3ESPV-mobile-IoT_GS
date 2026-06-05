@@ -1,26 +1,23 @@
-import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
 import { RootStackParamList, TabParamList } from './src/types';
 
-// Importe as suas telas aqui
+// screens
 import CadastroScreen from './src/screens/CadastroScreen';
-import SuccessScreen from './src/screens/SuccessScreen';
-import HomeScreen from './src/screens/HomeScreen';
-import EstufasListScreen from './src/screens/EstufasListScreen';
 import DetalhesScreen from './src/screens/DetalhesScreen';
-import RelatoriosScreen from './src/screens/RelatoriosScreen';
+import EstufasListScreen from './src/screens/EstufasListScreen';
+import HomeScreen from './src/screens/HomeScreen';
 import IoTDashboardScreen from './src/screens/IoTDashboardScreen';
+import RelatoriosScreen from './src/screens/RelatoriosScreen';
+import SuccessScreen from './src/screens/SuccessScreen';
 
-// Criação dos navegadores tipados
+// navegadores
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator<TabParamList>();
-
-// Renderizar telas Placeholder apenas para visualizar
-const PlaceholderScreen = () => null;
 
 function TabNavigator() {
     return (
