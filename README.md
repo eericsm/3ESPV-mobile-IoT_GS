@@ -63,6 +63,9 @@ Inspirado nos protocolos de suporte à vida e plantio em Marte, o aplicativo tra
 ### video
 https://youtu.be/VFAWlKdnZuQ
 
+### wokwi
+https://wokwi.com/projects/465750674224131073
+
 ---
 ## Integrantes
 - Joao Victor Oliveira dos Santos - RM557948
